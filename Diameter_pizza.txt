@@ -1,0 +1,22 @@
+#
+#Created by: Wendi Yu
+#Created on: Sep 28 2018
+#
+#Calculate the cost of pizza
+
+intro_text = input("Enter the diameter of the pizza you would like & we will calculate the cost.")
+
+diameter = float(input("Enter a diameter (Please, put a whole number) Diameter = "))
+
+LABOURCOST = 0.75
+RENT = 1.00
+MATERIAL = 0.50
+HST = 0.13
+
+cost = (LABOURCOST + RENT) + (MATERIAL * diameter )
+tax = cost * HST
+total = tax + cost
+
+print("The cost is :$ " + str(round(total,2)))
+
+input()
